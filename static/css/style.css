@@ -31,6 +31,32 @@
             border-radius: 50%;
         }
 
+                .datetime-container {
+            font-size: 8px;  /* Размер шрифта */
+            font-family: Arial, sans-serif;  /* Семейство шрифтов */
+            color: #333;  /* Цвет текста */
+            position: absolute;  /* Позиционирование */
+            top: 10px;  /* Отступ сверху */
+            right: 10px;  /* Отступ справа */
+        }
+
+               .time-container {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            height: 5vh;
+            background-color: #f8f9fa;
+        }
+
+            .time-box {
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+        }
+
+
                 .card-img-top {
             height: 300px; /* Фиксированная высота для изображения в карточке */
             object-fit: cover; /* Кадрирование изображения */
