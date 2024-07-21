@@ -10,17 +10,12 @@ def games():
 
 @app.route("/second/")
 def one_more():
-    return render_template("second.html")
-
-
-@app.route("/blog/")
-def page_blog():
-    pass
+    return render_template("blogblog.html")
 
 
 @app.route("/contacts/")
 def page_contacts():
-    pass
+    return render_template("contacts.html")
 
 
 if __name__ == "__main__":  # проверка запуска скрипта на локальном сервере

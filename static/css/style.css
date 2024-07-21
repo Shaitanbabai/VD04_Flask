@@ -1,0 +1,90 @@
+<style>
+        .carousel-item {
+            display: none;
+            position: relative;
+            transition: transform 0.6s ease-in-out;
+            padding: 0 100px; /* Добавляем отступы слева и справа */
+        }
+
+        .carousel-item-next,
+        .carousel-item-prev,
+        .carousel-item.active {
+            display: block;
+        }
+
+        .carousel-item-next,
+        .carousel-item-prev {
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 350px; /* Фиксированная высота для всех изображений */
+            object-fit: cover; /* Кадрирование изображения, чтобы заполнить контейнер */
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black; /* Изменение цвета стрелок на черный */
+            border-radius: 50%;
+        }
+
+                .card-img-top {
+            height: 300px; /* Фиксированная высота для изображения в карточке */
+            object-fit: cover; /* Кадрирование изображения */
+        }
+
+        .card-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Ограничение количества строк */
+            -webkit-box-orient: vertical;
+            height: calc(1.5em * 3); /* Высота трех строк текста */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Calibri, sans-serif;
+            margin: 0 auto; /* Центрирование таблицы */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center; /* Выравнивание по умолчанию */
+            font-size: 10px;
+        }
+        th {
+            background-color: #90EE90;
+        }
+        tr:not(:first-child) {
+            background-color: #F8BBFF;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
+        /* Задать ширину столбцов */
+        th, td:nth-child(1) { /* Блюдо */
+            width: 250px;
+        }
+        td:nth-child(2) { /* Оценка */
+            width: 80px;
+            text-align: center; /* Выравнивание по центру */
+        }
+        td:nth-child(3) { /* Рецепт */
+            width: 300px;
+            text-align: left;
+        }
+        td:nth-child(4) { /* Фото */
+            width: 150px;
+            text-align: center; /* Выравнивание по центру */
+        }
+        /* Выравнивание значений в столбце "Блюдо" по центру */
+        td:nth-child(1) {
+            text-align: left;
+        }
+    </style>
