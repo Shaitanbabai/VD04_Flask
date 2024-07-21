@@ -10,7 +10,7 @@ def games():
 
 @app.route("/second/")
 def one_more():
-    return render_template("blogblog.html")
+    return render_template("blog.html")
 
 
 @app.route("/contacts/")
