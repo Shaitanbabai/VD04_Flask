@@ -8,7 +8,7 @@ def games():
     return render_template("index.html")
 
 
-@app.route("/second/")
+@app.route("/blog/")
 def one_more():
     return render_template("blog.html")
 
