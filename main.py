@@ -1,14 +1,15 @@
 from flask import Flask, render_template
 
 
-
 app = Flask(__name__)  # Создаем переменную арр , где создаем экземпляр класса
 
 
 @app.route("/")  # создаем декоратор для присвоения url-адреса для функции
 def games():
-    return render_template("index.html")
-
+    context = {
+        "link": "Подробнее"
+    }
+    return render_template("index.html", **context)
 
 @app.route("/blog/")
 def one_more():

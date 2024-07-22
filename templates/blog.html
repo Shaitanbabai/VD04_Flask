@@ -1,48 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+{% extends 'shablon.html' %}
 
-    <title>VD01 Рейтинг блюд</title>
-</head>
-<body>
+{% block title %}
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Главная</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/blog/">Менее главная</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/contacts/">Еще менее главная</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Тут вообще ни о чем</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Чо надо?" aria-label="Поиск">
-        <button class="btn btn-outline-success" type="submit">Поиск</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    List of dishes
+{% endblock %}
 
-<hr>
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active"><a href="/">Главная</a></li>
-    <li class="breadcrumb-item" aria-current="location"><b>Блог</b></li>
-  </ol>
-</nav>
-<hr>
+{% block content %}
 
 <hr>
     <h1>Мой рейтинг случайных блюд</h1>
@@ -124,34 +87,4 @@
         }
     </script>
 <hr>
-<footer class="bg-dark text-white mt-4">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Контактная информация</h5>
-                    <p>Email: molchit@narod.net</p>
-                    <p>Телефон: 222-33-22 </p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <h5>Социальные сети</h5>
-                    <a href="#" class="text-white me-3">
-                        <i class="bi bi-facebook"></i> Facebook
-                    </a>
-                    <a href="#" class="text-white me-3">
-                        <i class="bi bi-twitter"></i> Twitter
-                    </a>
-                    <a href="https://www.instagram.com/shaitanbabai/" class="text-white me-3">
-                        <i class="bi bi-instagram"></i> Instagram
-                    </a>
-                    <a href="#" class="text-white">
-                        <i class="bi bi-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
-</html>
+{% endblock %}
